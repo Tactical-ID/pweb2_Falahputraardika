@@ -1,0 +1,124 @@
+RewriteEngine On
+RewriteBase /SITA/
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^login/?$ index.php?page=1 [L]
+
+# mahasiswa
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^mahasiswa/?$ views/Mahasiswa/index.php?page=1 [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^proposal/?$ views/Mahasiswa/ta.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^tampil_logbook/?$ views/Mahasiswa/logbook.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^jadwal/?$ views/Mahasiswa/jadwal.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^tambah_judul/?$ views/Mahasiswa/tambah_judul.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^proces_judul/?$ views/Mahasiswa/proces.php [L]
+
+# Dosen
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^dosen/?$ views/Dosen/index.php?page=1 [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^mhs_bim/?$ views/Dosen/mhs_bim.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^ta_dsn/?$ views/Dosen/ta.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^logbook/?$ views/Dosen/logbook.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^tambah_logbook/?$ views/Dosen/tambah_logbook.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^proces_logbook/?$ views/Dosen/proses_logbook.php [L]
+
+#Admin
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^admin/?$ views/Admin/index.php?page=1 [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^mhs/?$ views/Admin/mahasiswa.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^dsn/?$ views/Admin/dosen.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^datbim/?$ views/Admin/databim.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^datata/?$ views/Admin/data_ta.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^tambah_mhs/?$ views/Admin/tambah_mhs.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^proces_mhs/?$ views/Admin/proses_mhs.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^edit_mhs/?$ views/Admin/edit_mhs.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^update_mhs/?$ views/Admin/update_mhs.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^hapus_mhs/?$ views/Admin/hapus_mhs.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^tambah_dsn/?$ views/Admin/tambah_dsn.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^proces_dsn/?$ views/Admin/proses_dsn.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^edit_dsn/?$ views/Admin/edit_dsn.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^update_dsn/?$ views/Admin/update_dsn.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^hapus_dsn/?$ views/Admin/hapus_dsn.php [L]    
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^bimjur/?$ views/Admin/bimjur.php [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteRule ^tajur/?$ views/Admin/tajur.php [L]
